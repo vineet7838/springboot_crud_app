@@ -1,0 +1,65 @@
+{
+    "clientId": "urn:amazon:webservices",
+    "baseUrl": "/auth/realms/wolfeidau/protocol/saml/clients/amazon-aws",
+    "surrogateAuthRequired": false,
+    "enabled": true,
+    "clientAuthenticatorType": "client-secret",
+    "redirectUris": [
+        "https://signin.aws.amazon.com/saml"
+    ],
+    "webOrigins": [
+        "https://signin.aws.amazon.com"
+    ],
+    "notBefore": 0,
+    "bearerOnly": false,
+    "consentRequired": false,
+    "standardFlowEnabled": true,
+    "implicitFlowEnabled": false,
+    "directAccessGrantsEnabled": false,
+    "serviceAccountsEnabled": false,
+    "publicClient": false,
+    "frontchannelLogout": true,
+    "protocol": "saml",
+    "attributes": {
+        "saml.assertion.signature": "true",
+        "saml.force.post.binding": "true",
+        "saml.multivalued.roles": "false",
+        "saml.encrypt": "false",
+        "saml_assertion_consumer_url_post": "https://signin.aws.amazon.com/saml",
+        "saml.server.signature": "true",
+        "saml_idp_initiated_sso_url_name": "amazon-aws",
+        "saml.server.signature.keyinfo.ext": "false",
+        "exclude.session.state.from.auth.response": "false",
+        "saml.signing.certificate": "MIIDbTCCAlWgAwIBAgIER0SZ4zANBgkqhkiG9w0BAQsFADBnMR8wHQYDVQQDExZ1cm46YW1hem9uOndlYnNlcnZpY2VzMSIwIAYDVQQKExlBbWF6b24gV2ViIFNlcnZpY2VzLCBJbmMuMRMwEQYDVQQIEwpXYXNoaW5ndG9uMQswCQYDVQQGEwJVUzAeFw0xOTA0MjYwMDAwMDBaFw0yMDA0MjUwMDAwMDBaMGcxHzAdBgNVBAMTFnVybjphbWF6b246d2Vic2VydmljZXMxIjAgBgNVBAoTGUFtYXpvbiBXZWIgU2VydmljZXMsIEluYy4xEzARBgNVBAgTCldhc2hpbmd0b24xCzAJBgNVBAYTAlVTMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsuyaMumZCRzVCZXWo6d3qmYbuFhB2G5ZBtYX4a5ZzbYcgTDqp0Q/O2utcSKez42Gz+IQSYjlO+pjt2/gsoaMmVyk6ertvQ+r7NimCs1tQmRH63LpuNMXsimIb4cBpxYOMbi8KybiZRkpS5lIoDLChoBG+v0KKBcMZzF+WeRIyfvWvht5hin8aARAr9hUCC6Cr5M5CI1xth8b799ZA4dsPBmuBEqVNM8uZWk7Wj3S/JRbh813iDgZ8ECIjga2gaTBuFoIypGLJ8hqSE3Wa/DRsYPCUfLuYWInv8vq7y0kEIYyYzfn8Vg//17UVIRBLBu8JRf/ysDP4H+/Auq3gNu81QIDAQABoyEwHzAdBgNVHQ4EFgQUyX7c2EnVwj2soKv0JgLrkVVqigowDQYJKoZIhvcNAQELBQADggEBABXgWQhb2bMmypho00EDlqhnxr4Czc7ojgyBDg51fdY4qdv4wpjt+dY/iCKI8tpfHdm7ursEPgwflQTo0YzPVI7hziJDV+NS3QgjfmjO4t/ZVmzQMkKE0B3Fhon/4mp8FFKCCDW2BDh9KaDsvjnk5so+ESX+GnLTOx4hpC0gqKZjzsIE5jL1NTBSR/Jh/GSHtGSBmvTeqfPkWXCjlBYr+fgl9Bb8wcxBW2D09VzPyZi4LZTODA5sWOFxLLb47rfHVSJGQbBu8u1uVPBs0EBaqV4UKvt3+LqTQ+mrO4lX84d9aHjhUDTmzkOHhdEGLMPMc1nV88hxDT+bLy5T8Y5RHfM=",
+        "saml.signature.algorithm": "RSA_SHA256",
+        "saml_force_name_id_format": "false",
+        "saml.client.signature": "true",
+        "tls.client.certificate.bound.access.tokens": "false",
+        "saml.authnstatement": "true",
+        "display.on.consent.screen": "false",
+        "saml_name_id_format": "transient",
+        "saml.onetimeuse.condition": "false",
+        "saml_signature_canonicalization_method": "http://www.w3.org/2001/10/xml-exc-c14n#"
+    },
+    "authenticationFlowBindingOverrides": {},
+    "fullScopeAllowed": false,
+    "nodeReRegistrationTimeout": -1,
+    "defaultClientScopes": [
+        "web-origins",
+        "role_list",
+        "profile",
+        "roles",
+        "email"
+    ],
+    "optionalClientScopes": [
+        "address",
+        "phone",
+        "offline_access",
+        "microprofile-jwt"
+    ],
+    "access": {
+        "view": true,
+        "configure": true,
+        "manage": true
+    }
+}
